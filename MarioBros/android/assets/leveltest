@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="13" tilewidth="16" tileheight="16" nextobjectid="7">
+ <tileset firstgid="1" name="tileset_gutter" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="924" columns="33">
+  <image source="tileset_gutter.png" width="594" height="504"/>
+ </tileset>
+ <layer name="Background Color" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztwzEJAAAMA7Ay/4bqrir2JZBeUlVVVVVVVVVVVVVV1ccDxULniQ==
+  </data>
+ </layer>
+ <layer name="Graphic Layer" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztl8lOAzEMhjOdE9woB1SQgDMc2SRAAp6KJwEk1rcAJNZHw5GKFEXeJvUsbf1JPnTixp7EfzwJQeZ+FMID2ONI4WxMn7GtctmuQ9gB263byWtRGNJezyM3sG63YHfZ+n3A70+wr5HOHxvL94b7ryb2PxPQxCbYFqENaVzro8kl8gRjz2Avic8FzHsJdlXzvm3oPI1B6WMo5wu3vlKOQ3mHPnmFdXsDe1eef5x/PpbvTdNYFKewX2dg58S+SeNaHy3f8D4/YL+K98p9KZ1HsHMBe5bXcRqD0gcXN2LZF0vnknKUxpcVbZ+cBav60PZRy7wkH0xjJWDnAvasjTrWfHeUzlXaN73f6qD6JFW3lN65c4Crj43EJkJsqY821TeWVx5bqm1MY9a11/SMkOJ3eQ/FzhtNfO+3s0HVLaV3q+9lLrYEp2/LO7AEVnsaDVK6a/LNTsVPsey3JfQd35k/LO/AJWg06D3HcRxn+Yh3z7HRXCtVCKsV7zPOLMZP78KO4/TDHmh3X9CvY8carPW6r7ejROqvrt/uiNo9mJpr2IkcQR0cg50Q9SDpMx/n5pNiSfk1/W+bXE/zSc0yt7zPptqNdugaXjgqtyLreg19z9ww+wO+QZs4
+  </data>
+ </layer>
+ <objectgroup name="Ground"/>
+ <objectgroup name="Pipes"/>
+ <objectgroup name="Coins"/>
+ <objectgroup name="Bricks"/>
+</map>

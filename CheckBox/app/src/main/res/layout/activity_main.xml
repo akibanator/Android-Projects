@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="akiba.com.br.checkbox.MainActivity">
+
+    <TextView
+        android:text="Quais animais de estimação você tem?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:text="Papagaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxPapagaioId"
+        android:layout_below="@+id/checkBoxGatoId"
+        android:layout_alignLeft="@+id/checkBoxGatoId"
+        android:layout_alignStart="@+id/checkBoxGatoId" />
+
+    <CheckBox
+        android:text="Cachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxCachorroId"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <CheckBox
+        android:text="Gato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxGatoId"
+        android:layout_below="@+id/checkBoxCachorroId"
+        android:layout_alignLeft="@+id/checkBoxCachorroId"
+        android:layout_alignStart="@+id/checkBoxCachorroId" />
+
+    <Button
+        android:text="Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/buttonId"
+        android:layout_below="@+id/checkBoxPapagaioId"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Mostrar..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/textoExibicaoId" />
+</RelativeLayout>

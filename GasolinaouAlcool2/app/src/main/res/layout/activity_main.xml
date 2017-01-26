@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="akiba.com.br.gasolinaoualcool.MainActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/gas"
+        android:id="@+id/imgId"
+        android:layout_height="@dimen/tamanhoImgPadrao"
+        android:layout_width="@dimen/tamanhoImgPadrao"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Preencha o valor da gasolina e do álcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescId"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/campoAlcId"
+        android:layout_alignBaseline="@+id/campoGasId"
+        android:layout_alignBottom="@+id/campoGasId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imgId"
+        android:layout_toEndOf="@+id/imgId"
+        android:background="@android:color/holo_red_light"
+        android:hint="Álcool"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/campoGasId"
+        android:layout_below="@+id/textDescId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imgId"
+        android:layout_toStartOf="@+id/imgId"
+        android:background="@android:color/holo_red_light"
+        android:hint="Gasolina"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoAlcId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/botaoCalcId" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/botaoCalcId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/resultadoId"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
